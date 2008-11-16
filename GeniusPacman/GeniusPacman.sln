@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightPacman", "SilverlightPacman\SilverlightPacman.csproj", "{DB52EDFF-992E-4E32-BFCF-8978674628EB}"
-EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SilverlightPacmanWeb", "SilverlightPacmanWeb", "{488C7842-1C0F-446A-A7E1-E4481A194B1A}"
 	ProjectSection(WebsiteProperties) = preProject
 		SccProjectName = "SAK"
@@ -26,7 +24,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SilverlightPacmanWeb", "Sil
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "3392"
 		DefaultWebSiteLanguage = "Visual C#"
-		ProjOutputReferences = "{DB52EDFF-992E-4E32-BFCF-8978674628EB}|ClientBin|false;"
+		ProjOutputReferences = "{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}|ClientBin|false;"
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{51BE135F-59EF-45E8-B018-2FE7211F4503}"
@@ -35,23 +33,30 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeniusPacman.Core", "Genius
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeniusPacman.Silverlight.Core", "GeniusPacman.Silverlight.Core\GeniusPacman.Silverlight.Core.csproj", "{A6B3166E-55A7-4E75-BBF7-BD32762EC07B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightPacman.Controls", "SilverlightPacman.Controls\SilverlightPacman.Controls.csproj", "{9DABD6C5-49AA-44EB-9B59-6A879A93A301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightPacmanApp", "SilverlightPacmanApp\SilverlightPacmanApp.csproj", "{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
+		SccNumberOfProjects = 5
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs03.codeplex.com/
 		SccLocalPath0 = .
 		SccProjectUniqueName1 = GeniusPacman.Silverlight.Core\\GeniusPacman.Silverlight.Core.csproj
 		SccProjectName1 = GeniusPacman.Silverlight.Core
 		SccLocalPath1 = GeniusPacman.Silverlight.Core
-		SccProjectUniqueName2 = SilverlightPacman\\SilverlightPacman.csproj
-		SccProjectName2 = SilverlightPacman
-		SccLocalPath2 = SilverlightPacman
-		SccWebProject3 = true
-		SccProjectUniqueName3 = SilverlightPacmanWeb
-		SccLocalPath3 = .
-		SccProjectFilePathRelativizedFromConnection3 = SilverlightPacmanWeb\\
-		SccProjectEnlistmentChoice3 = 2
+		SccWebProject2 = true
+		SccProjectUniqueName2 = SilverlightPacmanWeb
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = SilverlightPacmanWeb\\
+		SccProjectEnlistmentChoice2 = 2
+		SccProjectUniqueName3 = SilverlightPacmanApp\\SilverlightPacmanApp.csproj
+		SccProjectName3 = SilverlightPacmanApp
+		SccLocalPath3 = SilverlightPacmanApp
+		SccProjectUniqueName4 = SilverlightPacman.Controls\\SilverlightPacman.Controls.csproj
+		SccProjectName4 = SilverlightPacman.Controls
+		SccLocalPath4 = SilverlightPacman.Controls
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|.NET = Debug|.NET
@@ -62,16 +67,6 @@ Global
 		Release|Mixed Platforms = Release|Mixed Platforms
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DB52EDFF-992E-4E32-BFCF-8978674628EB}.Debug|.NET.ActiveCfg = Debug|Any CPU
-		{DB52EDFF-992E-4E32-BFCF-8978674628EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB52EDFF-992E-4E32-BFCF-8978674628EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB52EDFF-992E-4E32-BFCF-8978674628EB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{DB52EDFF-992E-4E32-BFCF-8978674628EB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{DB52EDFF-992E-4E32-BFCF-8978674628EB}.Release|.NET.ActiveCfg = Release|Any CPU
-		{DB52EDFF-992E-4E32-BFCF-8978674628EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB52EDFF-992E-4E32-BFCF-8978674628EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DB52EDFF-992E-4E32-BFCF-8978674628EB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{DB52EDFF-992E-4E32-BFCF-8978674628EB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{488C7842-1C0F-446A-A7E1-E4481A194B1A}.Debug|.NET.ActiveCfg = Debug|.NET
 		{488C7842-1C0F-446A-A7E1-E4481A194B1A}.Debug|.NET.Build.0 = Debug|.NET
 		{488C7842-1C0F-446A-A7E1-E4481A194B1A}.Debug|Any CPU.ActiveCfg = Debug|.NET
@@ -102,6 +97,26 @@ Global
 		{A6B3166E-55A7-4E75-BBF7-BD32762EC07B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6B3166E-55A7-4E75-BBF7-BD32762EC07B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{A6B3166E-55A7-4E75-BBF7-BD32762EC07B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9DABD6C5-49AA-44EB-9B59-6A879A93A301}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{9DABD6C5-49AA-44EB-9B59-6A879A93A301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DABD6C5-49AA-44EB-9B59-6A879A93A301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DABD6C5-49AA-44EB-9B59-6A879A93A301}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9DABD6C5-49AA-44EB-9B59-6A879A93A301}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9DABD6C5-49AA-44EB-9B59-6A879A93A301}.Release|.NET.ActiveCfg = Release|Any CPU
+		{9DABD6C5-49AA-44EB-9B59-6A879A93A301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DABD6C5-49AA-44EB-9B59-6A879A93A301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DABD6C5-49AA-44EB-9B59-6A879A93A301}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9DABD6C5-49AA-44EB-9B59-6A879A93A301}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}.Release|.NET.ActiveCfg = Release|Any CPU
+		{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

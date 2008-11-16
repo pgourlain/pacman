@@ -1,0 +1,199 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A73BE82-8AE8-4B09-97B3-29ACEBB47E1B}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SilverlightPacman</RootNamespace>
+    <AssemblyName>SilverlightPacmanApp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>SilverlightPacmanApp.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>SilverlightPacmanApp.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>false</ThrowErrorsInValidation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Windows.Controls, Version=2.0.21027.1502, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\Microsoft.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BasePresenter.cs" />
+    <Compile Include="BonusPresenter.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\DirectionToAngleConverter.cs" />
+    <Compile Include="Converters\GameStatusToVisibilityConverter.cs" />
+    <Compile Include="Converters\GhostStateToColorConverter.cs" />
+    <Compile Include="FlyingScoreUC.xaml.cs">
+      <DependentUpon>FlyingScoreUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GamePresenter.cs" />
+    <Compile Include="GhostPresenter.cs" />
+    <Compile Include="GhostUC.xaml.cs">
+      <DependentUpon>GhostUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GhostUCPresenter.cs" />
+    <Compile Include="PacmanPresenter.cs" />
+    <Compile Include="PacmanUC.xaml.cs">
+      <DependentUpon>PacmanUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page.xaml.cs">
+      <DependentUpon>Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpritePresenter.cs" />
+    <Compile Include="StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFPacmanTimer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="FlyingScoreUC.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GhostUC.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PacmanUC.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="StartPage.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CRACKMAN.TTF" />
+    <Resource Include="digital.ttf" />
+    <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG_0254_800x600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG_0340_800x600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeniusPacman.Silverlight.Core\GeniusPacman.Silverlight.Core.csproj">
+      <Project>{A6B3166E-55A7-4E75-BBF7-BD32762EC07B}</Project>
+      <Name>GeniusPacman.Silverlight.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bonus_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bonus_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bonus_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bonus_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bonus_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bonus_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Music\pacman_beginning.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Music\pacman_chomp.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Music\pacman_death.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Music\pacman_eatfruit.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Music\pacman_eatghost.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Music\pacman_extrapac.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Music\pacman_intermission.mp3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight\v2.0\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
